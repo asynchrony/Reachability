@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iOSReachability' target in the 'iOSReachability' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
