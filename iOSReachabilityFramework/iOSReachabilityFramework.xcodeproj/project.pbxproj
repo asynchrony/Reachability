@@ -36,7 +36,7 @@
 		B457F229168E0E4C0069ADF5 /* iOSReachability-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSReachability-Info.plist"; sourceTree = "<group>"; };
 		B457F22B168E0E4C0069ADF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B457F22D168E0E4C0069ADF5 /* iOSReachability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSReachability-Prefix.pch"; sourceTree = "<group>"; };
-		B4E7DA7E1679301500C01DFA /* libiOSReachabilityLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSReachabilityLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E7DA7E1679301500C01DFA /* libiOSReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E7DA811679301500C01DFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4E7DA851679301500C01DFA /* iOSReachabilityFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSReachabilityFramework-Prefix.pch"; sourceTree = "<group>"; };
 		B4E7DA861679301500C01DFA /* iOSReachabilityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSReachabilityFramework.h; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		B4E7DA7F1679301500C01DFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4E7DA7E1679301500C01DFA /* libiOSReachabilityLib.a */,
+				B4E7DA7E1679301500C01DFA /* libiOSReachability.a */,
 				B457F225168E0E4C0069ADF5 /* iOSReachability.framework */,
 			);
 			name = Products;
@@ -186,7 +186,7 @@
 			);
 			name = iOSReachabilityLib;
 			productName = iOSReachabilityFramework;
-			productReference = B4E7DA7E1679301500C01DFA /* libiOSReachabilityLib.a */;
+			productReference = B4E7DA7E1679301500C01DFA /* libiOSReachability.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -385,9 +385,9 @@
 				GCC_PREFIX_HEADER = "iOSReachabilityFramework/iOSReachabilityFramework-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/iOSReachabilityFramework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/iOSReachabilityFramework;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = iOSReachability;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -400,9 +400,9 @@
 				GCC_PREFIX_HEADER = "iOSReachabilityFramework/iOSReachabilityFramework-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/iOSReachabilityFramework;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/iOSReachabilityFramework;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = iOSReachability;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
